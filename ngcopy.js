@@ -1,19 +1,21 @@
-console.log("må du testes");
+console.log("må du testes nr 2");
+text = window.getSelection().toString();
+console.log("t:" + text);
 
+function minFunction2() {
+    text = window.getSelection().toString();
+    var splitted = text.split('\n');
+    var line = "";
+    for (var i = 0; i < splitted.length; i++) {
 
+        delimited = splitted[i].split(',');
 
-alert("lol");
-
-
-// Anonymous "self-invoking" function
-(function() {
-    // Load the script
-    var script = document.createElement("SCRIPT");
-    script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js';
-    script.type = 'text/javascript';
-    script.onload = function() {
-        var $ = window.jQuery;
-        // Use $ here...
-    };
-    document.getElementsByTagName("head")[0].appendChild(script);
-})();
+        for (var j = 0; j < delimited.length; j++) {
+            //console.log(innerData[j]);
+            line += delimited[j] + "\t"
+        }
+        line += "\n"
+    }
+    //$('textarea#outputText').val(text);
+    alert(text)
+}
