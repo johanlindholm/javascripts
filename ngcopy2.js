@@ -1,4 +1,4 @@
-console.log("1må du testes");
+console.log("må du testes nr 2");
 text = window.getSelection().toString();
 console.log("t:" + text);
 
