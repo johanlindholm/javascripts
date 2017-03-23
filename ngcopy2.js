@@ -1,6 +1,6 @@
-console.log("må du testes");
+console.log("1må du testes");
 text = window.getSelection().toString();
-console.log(text);
+console.log("t:" + text);
 
 function minFunction2() {
     text = window.getSelection().toString();
